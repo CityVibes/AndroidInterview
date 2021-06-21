@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 
 @Entity(tableName = GitDao.repoTable)
 @Serializable
-data class GitRepository(
+class GitRepository(
     @PrimaryKey
     val id: Long,
     val full_name: String,

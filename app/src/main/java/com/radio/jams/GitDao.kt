@@ -1,6 +1,5 @@
 package com.radio.jams
 
-import androidx.paging.PagingSource
 import androidx.room.*
 
 @Dao
@@ -12,9 +11,6 @@ interface GitDao {
 
     @Query("SELECT * FROM $repoTable where id = :id")
     fun getById(id: Int): GitRepository?
-
-    @Query("SELECT * FROM $repoTable")
-    fun getAllRepositories(): PagingSource<Int, GitRepository>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertRepositories(gitRepositories: List<GitRepository>)
