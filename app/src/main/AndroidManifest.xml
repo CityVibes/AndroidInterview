@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.radio.jams">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-
     <application
         android:name=".JamsApplication"
         android:allowBackup="true"
