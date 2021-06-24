@@ -10,3 +10,5 @@ Tasks:
 2. Implement a list showing public GitHub repositories. API is already provided.
 3. (Optional) Add pagination functionality.
 4. Push your code to GitHub.
+
+![app](https://gh.riotgames.com/ext-jskripkauskas/AndroidInterviewTemplate1/blob/template/app.png)
