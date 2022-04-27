@@ -7,6 +7,7 @@ import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType
 import org.koin.android.ext.koin.androidContext
+import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.context.startKoin
 import org.koin.dsl.module
 import retrofit2.Retrofit
@@ -32,6 +33,8 @@ class JamsApplication : Application() {
                 .build()
                 .gitDao()
         }
+
+        viewModel { GitRepositoryViewModel(get()) }
     }
 
     override fun onCreate() {
