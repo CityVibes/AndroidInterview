@@ -11,4 +11,4 @@ Tasks:
 3. (Optional) Add pagination functionality.
 4. Push your code to GitHub.
 
-![app](https://gh.riotgames.com/ext-jskripkauskas/AndroidInterviewTemplate1/blob/template/app.png)
+![app](https://github.com/CityVibes/AndroidInterview/blob/main/app.png)
