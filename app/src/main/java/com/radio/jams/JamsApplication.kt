@@ -1,7 +1,6 @@
 package com.radio.jams
 
 import android.app.Application
-import androidx.room.Room
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
@@ -24,13 +23,6 @@ class JamsApplication : Application() {
                 .build()
 
             retrofit.create(GithubApi::class.java)
-        }
-
-        single {
-            Room.databaseBuilder(get(), GitDatabase::class.java, GitDatabase.dbName)
-                .fallbackToDestructiveMigration()
-                .build()
-                .gitDao()
         }
     }
 
